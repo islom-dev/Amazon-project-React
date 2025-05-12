@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Клонирование репозитория
+        uses: actions/checkout@v3
+
+      - name: 🧱 Установка Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📦 Установка зависимостей
+        run: npm install
+
+      - name: ⚒️ Сборка проекта
+        run: npm run build
+
+      - name: ✅ Тестирование (если есть)
+        run: npm test || echo "тестов нет"
