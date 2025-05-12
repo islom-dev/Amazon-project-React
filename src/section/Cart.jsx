@@ -137,7 +137,7 @@ const Cart = () => {
           </div>           
         </div>
 
-<p className='font-semibold text-2xl max-w-7xl m-auto mt-32'>Customers who bought Poly Voyager Focus 2 UC Wireless Headset with Micr... also bought these items from other categories:</p>
+<p className='font-semibold text-2xl max-w-7xl m-auto mt-32'>Customers who bought Poly Voyager Focus 2 UC Wireless Headset with Micr... also bought these items from categories:</p>
 <div className='grid grid-cols-5 gap-10 mt-10 max-w-7xl m-auto'>
         <a href="#">
           <div className='w-[230px]'>
